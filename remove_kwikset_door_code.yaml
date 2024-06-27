@@ -1,6 +1,8 @@
 # This script uses ZHA Toolkit (https://github.com/mdeweerd/zha-toolkit) to manage smart door lock codes, and therefore ZHA Toolkit needs to be installed.
 # There is no gaurantee that this script will work as expected with your particular ZigBee smart door lock.
 # This has been tested against a Kwikset SmartCode 916 (https://www.kwikset.com/products/detail/916-smartcode-traditional-electronic-deadbolt-with-zigbee-technology)
+# Original source_url: https://raw.githubusercontent.com/nwithan8/configs/main/home_assistant/blueprints/scripts/set_guest_door_code_zigbee.yaml
+# Thanks to nwihan8.  I wanted a way just clear codes 
 
 blueprint:
   name: Remove Kwikset Door Code (ZigBee)

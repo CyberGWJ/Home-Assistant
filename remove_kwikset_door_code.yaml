@@ -1,0 +1,58 @@
+# This script uses ZHA Toolkit (https://github.com/mdeweerd/zha-toolkit) to manage smart door lock codes, and therefore ZHA Toolkit needs to be installed.
+# There is no gaurantee that this script will work as expected with your particular ZigBee smart door lock.
+# This has been tested against a Kwikset SmartCode 916 (https://www.kwikset.com/products/detail/916-smartcode-traditional-electronic-deadbolt-with-zigbee-technology)
+
+blueprint:
+  name: Remove Kwikset Door Code (ZigBee)
+  description: >-
+    A script that removes a code for a ZigBee smart door lock (via ZHA Toolkit). 
+    This script adds a new code.
+  domain: script
+  input:
+    lock:
+      description: (Required) Which door lock to program
+      name: Lock
+      selector:
+        target:
+          entity:
+            domain: lock
+    on_start:
+      description: (Optional) Action to execute when code is enabled
+      
+        The lock entity is available via the "lock" variable.
+        The set code is available via the "code" variable.
+        The set code slot is available via the "slot" variable.
+        The validity time is available via the "duration" variable.
+      name: When code enabled
+      default: []
+      selector:
+        action:
+    on_end:
+      description: (Optional) Action to execute when code is disabled
+      name: When code disabled
+      default: []
+      selector:
+        action:
+fields:
+  slot:
+    description: (Required) Which code slot to use
+    example: "10 (30 slots available)"
+    name: Slot
+    required: true
+    selector:
+      text: null
+
+variables:
+  lock: !input lock
+
+sequence:
+  - service: zha.clear_lock_user_code
+    data:
+      code_slot: "{{ slot }}"
+    target:
+      entity_id: "{{ lock.entity_id }}"
+  - choose:
+      - conditions: "{{ true }}"
+        sequence: !input on_end
+
+mode: single

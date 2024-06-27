@@ -39,8 +39,9 @@ fields:
     description: (Required) Which code slot to use
     example: "10 (30 slots available)"
     name: Slot
+    required: true
     selector:
-      text:
+      text: null
   code:
     description: The code to set
     example: "1234"

@@ -11,8 +11,8 @@ cturing Information (PMI)---4.0---2014-10-13'),
 /* implementation_level */ '2;1');
 
 FILE_NAME(
-/* name */ 'LD2540 Support.step',
-/* time_stamp */ '2025-01-24T12:19:48-05:00',
+/* name */ 'LD2450 Support.step',
+/* time_stamp */ '2025-02-05T08:02:19-05:00',
 /* author */ (''),
 /* organization */ (''),
 /* preprocessor_version */ 'ST-DEVELOPER v20',
@@ -28,7 +28,7 @@ DATA;
 #11=SHAPE_REPRESENTATION_RELATIONSHIP('SRR','None',#491,#12);
 #12=ADVANCED_BREP_SHAPE_REPRESENTATION('',(#14),#483);
 #13=STYLED_ITEM('',(#500),#14);
-#14=MANIFOLD_SOLID_BREP('LD2540 Support',#292);
+#14=MANIFOLD_SOLID_BREP('LD2450 Support',#292);
 #15=CYLINDRICAL_SURFACE('',#311,4.);
 #16=FACE_OUTER_BOUND('',#31,.T.);
 #17=FACE_OUTER_BOUND('',#32,.T.);

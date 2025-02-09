@@ -4,4 +4,4 @@ This is based on the original design by FutureProofHomes https://github.com/Futu
 
 It is still a work in progress.
 
- 
+Read the Modular Chamber for Satellite 1 PDF document for details. 

@@ -6,4 +6,6 @@ It is still a work in progress.
 
 Read the Modular Chamber for Satellite 1 PDF document for details. 
 
-![Enclosure](images/Assembled Enclosure.jpg)
+![Enclosure](images/Assembled_Enclosure.jpg)
+
+![Assembly](images/Enclosure_Assembly_Order.jpg)

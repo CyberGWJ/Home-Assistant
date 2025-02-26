@@ -2,7 +2,7 @@
 
 This is based on the original design by FutureProofHomes https://github.com/FutureProofHomes/Satellite1-Enclosures and their great team.  
 
-It is still a work in progress.
+Version 1.
 
 Read the Modular Chamber for Satellite 1 PDF document for details. 
 

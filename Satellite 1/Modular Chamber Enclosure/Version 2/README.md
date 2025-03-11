@@ -10,4 +10,6 @@ More detail documentation will be added.
 
 The disassembly document show how the enclosure is put together. 
 
-The enclosure-v3.3mf has all the parts needed to print.  The heat inserts are M3x5x4 and M3x10 screws (socket or button head will work).  There are 4 of each needed for each enclosure part (top, air chamber, and body)  
+The enclosure-v3.3mf has all the parts needed to print.  The heat inserts are M3x5x4 and M3x10 screws (socket or button head will work).  There are 4 of each needed for each enclosure part (top, air chamber, and body).
+
+This is a Work in Progress.
